@@ -75,7 +75,7 @@ export const fetchWithTokenRefresh = async (url: string, options: RequestInit) =
 
 export const fetchServerSide = async (endPoint: string, options: RequestInit = {}, queryParams?: URLSearchParams) => {
     if (typeof window === "undefined") {
-        const baseUrl = process.env.SERVER_BASE_URL
+        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
         if (!baseUrl) {
             throw new Error("어라라, window의 타입이 뭔가 이상해요! 🫣")
