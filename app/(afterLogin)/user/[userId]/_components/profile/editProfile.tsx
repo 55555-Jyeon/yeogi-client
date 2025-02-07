@@ -38,12 +38,12 @@ const EditProfile = ({ userInfo, setUserInfo, setIsEditing }: EditProfileProps) 
         })
 
     return (
-        <div className="relative">
+        <div className="max-w-[2000px] w-full relative">
             <Banner
                 banner={previewImages.banner || editedUserInfo.banner || DefaultBanner}
                 onImageChange={e => handleImageChange(e, "banner", updatePreview)}
             />
-            <div className="absolute left-[120px] top-[360px] flex items-center">
+            <div className=" w-full absolute left-[120px] top-[360px] flex justify-start items-center">
                 <ProfileImage
                     image={previewImages.profile || userInfo.profile || DefaultProfile}
                     onImageChange={e => handleImageChange(e, "profile", updatePreview)}

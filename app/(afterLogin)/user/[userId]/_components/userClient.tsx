@@ -40,7 +40,7 @@ const UserClient = ({ initialUser }: UserClientProps) => {
     if (data)
         return (
             <>
-                <div>
+                <div className="w-full flex flex-col justify-center items-center">
                     {isEditing ? (
                         <EditProfile userInfo={data} setUserInfo={handleSetUserInfo} setIsEditing={setIsEditing} />
                     ) : (

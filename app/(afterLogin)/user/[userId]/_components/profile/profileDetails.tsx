@@ -20,8 +20,8 @@ const ProfileDetails = ({ ageRange, gender }: ProfileDetailsProps) => {
 
     return (
         <>
-            <div className="flex justify-end mr-[120px] mt-10 mb-[120px]">
-                <div className="flex text-bg">
+            <div className=" w-[1800px] flex items-center justify-end mr-[120px] mt-10 mb-[120px]">
+                <div className="flex justify-end text-bg">
                     <button
                         onClick={() => setIsInProgress(true)}
                         className="bg-SYSTEM-white p-5 mr-6 rounded-2xl w-24 h-[120px] text-center"

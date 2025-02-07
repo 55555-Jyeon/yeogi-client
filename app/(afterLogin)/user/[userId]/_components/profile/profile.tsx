@@ -4,9 +4,9 @@ import DefaultProfile from "@/public/images/user/sampleProfile.svg"
 import DefaultBanner from "@/public/images/user/defaultBanner.svg"
 const Profile = ({ userInfo, onEdit }: ProfileProps) => {
     return (
-        <div className="relative">
-            <div className="relative">
-                <div className="relative w-full h-[440px] flex justify-center items-center overflow-hidden">
+        <div className="w-full flex justify-center items-center relative">
+            <div className="max-w-[2000px] w-full relative flex justify-center items-center">
+                <div className="relative  w-full h-[440px] flex justify-center items-center overflow-hidden">
                     <Image
                         fill
                         src={userInfo.banner ? userInfo.banner : DefaultBanner}
@@ -21,7 +21,7 @@ const Profile = ({ userInfo, onEdit }: ProfileProps) => {
                     프로필 수정
                 </button>
             </div>
-            <div className="absolute top-[360px] flex flex-col items-center">
+            <div className="absolute max-w-[2000px] w-full top-[360px] flex flex-col items-center">
                 <div className="absolute left-[120px] w-[240px] h-[240px] rounded-full border-[5px] bg-SYSTEM-white border-SYETEM-white shadow-profile overflow-hidden">
                     <Image
                         fill
@@ -31,7 +31,7 @@ const Profile = ({ userInfo, onEdit }: ProfileProps) => {
                         sizes="240"
                     />
                 </div>
-                <div className="ml-[400px] mt-36">
+                <div className="w-full px-[400px] mt-36">
                     <h1 className="text-4xl font-semibold mb-4">{userInfo.nickname}</h1>
                     <p className="text-lg">{userInfo.motto}</p>
                 </div>

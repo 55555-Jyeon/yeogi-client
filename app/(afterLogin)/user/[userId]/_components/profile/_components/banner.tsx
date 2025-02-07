@@ -9,7 +9,7 @@ const Banner = ({ banner, onImageChange }: BannerProps) => {
     const bgImageInputRef = useRef<HTMLInputElement>(null)
 
     return (
-        <div className="relative">
+        <div className="w-full relative">
             <div className="relative w-full h-[440px] flex justify-center items-center overflow-hidden">
                 <Image fill src={banner ? banner : DefaultBanner} alt="banner image" className="object-cover" />
             </div>
